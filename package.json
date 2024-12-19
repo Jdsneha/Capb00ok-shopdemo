@@ -16,11 +16,15 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "h-deploy": "cds deploy --to hana:CAPHANA-dev"
+    "h-deploy": "cds deploy --to hana:CAPHANA-dev",
+    "watch-fe-bookshop": "cds watch --open fe-bookshop/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
       "native_hana_associations": false
     }
-  }
+  },
+  "sapux": [
+    "app/fe-bookshop"
+  ]
 }
